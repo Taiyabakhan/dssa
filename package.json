@@ -1,0 +1,37 @@
+{
+    "name": "digital-art-authentication",
+    "version": "1.0.0",
+    "description": "Blockchain-based digital art authentication system",
+    "private": true,
+    "scripts": {
+      "start": "node server/app.js",
+      "server": "nodemon server/app.js",
+      "client": "cd client && npm start",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2",
+      "web3": "^4.0.3",
+      "ipfs-http-client": "^56.0.3",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "^5.0.1"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.1",
+      "nodemon": "^3.0.1",
+      "solc": "^0.8.0"
+    },
+    "scripts": {
+      "start": "node server/app.js",
+      "server": "nodemon server/app.js",
+      "client": "cd client && npm start",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "compile": "node scripts/compile.js",
+      "deploy": "node scripts/deploy.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    }
+  }
