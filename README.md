@@ -24,7 +24,9 @@ A blockchain-based solution for authenticating and tracking digital art ownershi
 1. Install dependencies:
 ```bash
 npm install
-cd client && npm install
+cd client
+npm install
+cd ..
 ```
 
 2. Compile smart contracts:
