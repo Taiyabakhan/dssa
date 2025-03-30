@@ -24,22 +24,41 @@ A blockchain-based solution for authenticating and tracking digital art ownershi
 1. Install dependencies:
 ```bash
 npm install
-cd client
-npm install
+cd client && npm install 
 cd ..
 ```
 
-2. Compile smart contracts:
+1. install ganache-cli:
+    run it on the background 
+```bash 
+ganache-cli
+
+2. install truffle
+   check the version using 
+```bash 
+truffle version
+mkdir my-truffle-project
+cd my-truffle-project
+truffle init
+truffle compile
+cd ..
+
+3. install solc@0.8.0
+```bash
+npm install solc@0.8.0
+
+
+4. Compile smart contracts:
 ```bash
 npm run compile
 ```
 
-3. Deploy contracts (requires local Ethereum node):
+5. Deploy contracts (requires local Ethereum node):
 ```bash
 npm run deploy
 ```
 
-4. Start development servers:
+6. Start development servers:
 ```bash
 npm run dev
 ```
